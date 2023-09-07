@@ -1,0 +1,12 @@
+<head>
+    <title>student detail</title>
+</head>
+<body bgcolor="cyan">
+    <h1>DELETE STUDENT DETAIL</h1>
+    <form action="/dl/" method="post">
+        {% csrf_token %}
+        ENTER STUDENT NAME:<input type="text" name="sn"><br><br>
+        <input type="submit" value="DELETE">
+        <h3>{{r}}</h3>
+    </form>
+</body>

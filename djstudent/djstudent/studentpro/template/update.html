@@ -1,0 +1,13 @@
+<head>
+    <title>student detail</title>
+</head>
+<body bgcolor="cyan">
+    <h1>UPDATE STUDENT DETAIL</h1>
+    <form action="/up/" method="post">
+        {% csrf_token %}
+        ENTER STUDENT NAME:<input type="text" name="sn"><br><br>
+        ENTER STUDENT MOBILE NUMBER :<input type="number" name="sm"> <br><br>
+        <input type="submit" value="UPDATE">
+        <h3>{{r}}</h3>
+    </form>
+</body>

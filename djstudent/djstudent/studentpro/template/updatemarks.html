@@ -1,0 +1,16 @@
+<head>
+    <title>student marks detail</title>
+</head>
+<body bgcolor="cyan">
+    <h1>UPDATE STUDENT MARKS </h1>
+    <form action="/stdupm/" method="post">
+        {% csrf_token %}
+        ENTER STUDENT NAME:<input type="text" name="sdn"><br><br>
+        ENTER MARK1:<input type="number" name="sm1"><br><br>
+        ENTER MARK2:<input type="number" name="sm2"><br><br>
+        ENTER MARK3:<input type="number" name="sm3"><br><br>
+        ENTER MARK4:<input type="number" name="sm4"><br><br>
+        <input type="submit" value="UPDATE">
+        <h3>{{r}}</h3>
+    </form>
+</body>

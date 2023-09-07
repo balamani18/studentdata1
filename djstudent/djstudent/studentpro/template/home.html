@@ -1,0 +1,46 @@
+<head>
+    <title>Student info</title>
+    <style>
+        body{background-color: rgb(84, 207, 125);}
+        h1{text-align: center;background-color: rgb(94, 94, 219);color: white;}
+        h2{text-align: center;color: white;position: absolute; right: 50%;top:10%}
+        form{border:1px solid black;padding: 20px;position:absolute;left:40%;top:30%}
+        #a{position: absolute; left: 38%;top:20%}
+        #b{position: absolute; left: 44%;top:20%}
+        #c{position: absolute; left: 793px;top:20%}
+        #sm{position:absolute; top: 40%;text-align: center;background-color: rgb(94, 94, 219);color: white;width: 100%;}
+        #d{position: absolute; left: 34%;top:60%}
+        #e{position: absolute; left: 43%;top:60%}
+        #f{position: absolute; left: 824px;top:60%}
+
+    </style>
+</head>
+<body>
+    <h1>STUDENT INFORMATION</h1><br><br>
+    <h2>CRUD</h2>
+    <form id="a" action="/s/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="ADD">
+    </form>
+    <form id="b" action="/u/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="UPDATE">
+    </form>
+    <form id="c" action="/d/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="DELETE">
+    </form>
+    <h1 id="sm">STUDENT MARKS INFORMATION</h1>
+    <form id="d" action="/sd/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="ADDMARKS">
+    </form>
+    <form id="e" action="/sdu/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="UPDATEMARKS">
+    </form>
+    <form id="f" action="/dm/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="DELETEMARKS">
+    </form>
+</body>

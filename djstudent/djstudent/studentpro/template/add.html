@@ -1,0 +1,16 @@
+<head>
+    <title>student detail</title>
+</head>
+<body bgcolor="cyan">
+    <h1>ADD STUDENT DETAIL</h1>
+    <form action="/st/" method="post">
+        {% csrf_token %}
+        ENTER STUDENT NAME:<input type="text" name="sn"><br><br>
+        ENTER STUDENT DEPT:<input type="text" name="sd"><br><br>
+        ENTER STUDENT AGE:<input type="number" name="sa"><br><br>
+        ENTER STUDENT MOBILE NUMBER :<input type="number" name="sm"> <br><br>
+        ENTER STUDENT EMAIL:<input type="text" name="se"><br><br>
+        <input type="submit" value="add">
+        <h3>{{r}}</h3>
+    </form>
+</body>
